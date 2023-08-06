@@ -15,10 +15,6 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
 # Display the table on the page.
 
-
-
-
-
 streamlit.dataframe(fruit_listed)
 
 streamlit.header("Fruityvice Fruit Advice!")
@@ -42,5 +38,4 @@ streamlit.header("Fruit load list contains:")
 streamlit.dataframe(my_data_row)
 add_my_fruit = streamlit.text_input('What fruit do you like to add?','jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
-my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST
-values ('from streamlit')")
+my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
